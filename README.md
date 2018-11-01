@@ -4,7 +4,7 @@
 import makeResponsive from '../node_modules/make-responsive/MakeResponsive.js';
 
 let options = { id:'canvas', width:1920, height:1080, bgcolor:'#ccc' }
-makeResponsive(options, 1920, 1080, true,'both',true,1);
+makeResponsive(options, true,'both',true, 1);
 ```
 
 - Use the above to import the module and set the dimensions in the first two params. The module looks for ```#YOUR-ELEMENT-ID```.
