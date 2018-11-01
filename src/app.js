@@ -1,4 +1,4 @@
-import makeResponsive from '../modules/MakeResponsive.js';
-import './styles.scss';
+import makeResponsive from '../MakeResponsive.js';
 
-makeResponsive(1920, 1080, true,'both',true,1);
+let options = { id:'canvas', width:1920, height:1080, bgcolor:'rgba(0,0,0,0.2)' };
+makeResponsive(options, true,'both',true,1);
