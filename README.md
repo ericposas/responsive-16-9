@@ -6,7 +6,7 @@
 # Install 
 
 ```
-npm install --save make-responsive@1.0.5
+npm install --save make-responsive@latest
 ```
 
 
