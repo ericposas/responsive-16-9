@@ -1,3 +1,15 @@
+# Description
+
+- Create an element that scales uniformly according to the width/height ratio 
+
+
+# Install 
+
+```
+npm install --save make-responsive@1.0.5
+```
+
+
 # Usage
 
 ```
@@ -7,7 +19,7 @@ let options = { id:'canvas', width:1920, height:1080, bgcolor:'#ccc' }
 makeResponsive(options, true,'both',true, 1);
 ```
 
-- Use the above to import the module and set the dimensions in the first two params. The module looks for ```#YOUR-ELEMENT-ID```.
+- Use the above to import the module and set the id, dimensions, and bgcolor in the 'options' object. The module looks for ```#YOUR-ELEMENT-ID```.
 
 
 

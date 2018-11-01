@@ -1,6 +1,6 @@
 {
   "name": "make-responsive",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "makes a dom (canvas/div) element responsively scale uniformly in any aspect ratio",
   "main": "app.js",
   "dependencies": {},
