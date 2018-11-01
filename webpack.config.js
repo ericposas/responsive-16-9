@@ -1,14 +1,10 @@
 const path = require('path');
 const PugPlugin = require('html-webpack-plugin');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
-    'app': './src/app.js',
-    'styles': './src/styles.scss',
+    'app': './src/app.js'
   },
   output: {
       path: path.resolve(__dirname, './dist/'),
@@ -29,7 +25,7 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: [ MiniCSSExtractPlugin.loader, 'css-loader', 'sass-loader' ]
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
       }
     ]
   },
@@ -39,11 +35,6 @@ module.exports = {
       template: './src/index.pug',
       inject: false
     }),
-    new HtmlWebpackPlugin(),
-    new FixStyleOnlyEntriesPlugin(),
-    new MiniCSSExtractPlugin({
-      filename: "./css/[name].css",
-      chunkFilename: "[id].css"
-    })
+    new HtmlWebpackPlugin()
   ]
 };

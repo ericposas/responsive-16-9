@@ -1,16 +1,13 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
+  "name": "make-responsive",
+  "version": "1.0.3",
+  "description": "makes a canvas element responsively scale uniformly in any aspect ratio",
   "main": "app.js",
   "dependencies": {},
   "devDependencies": {
     "css-loader": "^1.0.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
     "pug-html-loader": "^1.1.5",
     "sass-loader": "^7.1.0",
@@ -25,6 +22,6 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Eric Posas",
   "license": "ISC"
 }
